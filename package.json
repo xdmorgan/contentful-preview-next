@@ -1,0 +1,24 @@
+{
+  "name": "contentful-preview-next",
+  "version": "0.1.0",
+  "description": "Preview Contentful content using Next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Contentful",
+    "Next.js",
+    "React"
+  ],
+  "author": "Dan Morgan",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^8.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
