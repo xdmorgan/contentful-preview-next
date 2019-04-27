@@ -1,9 +1,5 @@
-import Layout from "../components/layout.js";
-
-export default function Index() {
-  return (
-    <Layout>
-      <h1>Contentful Preview</h1>
-    </Layout>
-  );
-}
+export default () => (
+  <div>
+    <h1>Hi fam</h1>
+  </div>
+);
