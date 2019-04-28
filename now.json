@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@now/next" }],
+  "routes": [
+    { "src": "/preview/(?<slug>[^/]+)$", "dest": "/preview?slug=$slug" }
+  ],
+  "env": {
+    "SERVER_PORT": "3000",
+    "CF_SPACE_ID": "@df-space-id",
+    "CF_PREVIEW_TOKEN": "@df-preview-token",
+    "CF_HOST_URL": "preview.contentful.com",
+    "CF_ENV_NAME": "master",
+    "CF_POST_TYPE": "@df-post-type"
+  }
+}
