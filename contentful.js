@@ -8,13 +8,10 @@ const connect = async ({ token, host, space, env }) =>
     environment: env
   });
 
-const get = async (slug, client, type) =>
+const get = async ({ slug, client, type }) =>
   client.getEntries({
     content_type: type,
     "fields.slug[in]": slug
   });
 
-module.exports = {
-  connect,
-  get
-};
+module.exports = { connect, get };
